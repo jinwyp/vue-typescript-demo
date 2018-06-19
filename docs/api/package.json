@@ -1,0 +1,15 @@
+{
+  "name": "apidocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start": "aglio --theme-full-width -i ./api/api1.apib -o ./api/api1.html",
+      "server": "aglio --theme-full-width -i ./api/api1.apib -o ./api/api1.html -s"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aglio": "^2.3.0"
+  }
+}

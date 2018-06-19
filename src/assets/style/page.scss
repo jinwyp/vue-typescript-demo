@@ -1,0 +1,62 @@
+.container{
+  padding: 10px;
+}
+//搜索
+.searchForm{
+  width: 100%;
+  overflow: hidden;
+}
+.toolbar {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px 10px 0 10px;
+  border: 1px solid #c1c1c1;
+  overflow: hidden;
+
+  .el-form-item {
+    margin-bottom: 10px;
+  }
+}
+.search-item{
+  float:left;
+  margin-left:20px;
+  span,em{
+    float:left;
+  }
+  em{
+    margin-left: 10px;
+  }
+}
+//列表内容
+.tabel-con{
+  border: 1px solid #c1c1c1;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+//分页样式
+.pagination{
+  background-color:#e7e7e7;
+  text-align: right;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+
+/*putForwardManage examine*/
+.examineSubmit{
+    border:1px solid #ebeef5;
+    margin-top: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+/*commissionDetail list*/
+.commissionDetailSearch{
+    line-height:32px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+

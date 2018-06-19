@@ -1,0 +1,44 @@
+.el-button--primary{
+  color: #fff;
+  background-color: #03b4c3;
+  border-color: #03b4c3;
+}
+.el-button--primary:focus, .el-button--primary:hover {
+  background: #11bfce;
+  border-color: #11bfce;
+  color: #fff;
+}
+.el-input__inner{
+  height: 30px;
+}
+.el-input__icon{
+    line-height:30px;
+}
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  border-color: #03b4c3;
+  outline: 0;
+}
+.el-input-number__decrease, .el-input-number__increase {
+  height: 27px;
+  line-height: 27px;
+  top:6px;
+}
+.el-breadcrumb__separator{
+  font-weight: normal;
+  color: #333;
+}
+.el-dialog__body{
+    padding: 20px;
+}
+.el-table th{
+  background-color: #e7e7e7;
+  color: #666;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #03b4c3;
+    border-color: #03b4c3;
+}
+//table特殊行灰色
+.el-table .grey-row{
+  background-color: #efefef;
+}

@@ -1,0 +1,79 @@
+FORMAT: 1A
+HOST: http://localhost:8000/api
+
+# API 文档 
+
+该API文档使用 API Blueprint 格式, 和Markdown类似.
+文档内容包括用户注册, 用户登陆, 获取用户信息.
+
+
+
+## Group 用户注册
+
+用户注册相关API.
+
+
+## 用户注册 [/user/signup]
+
+### 新用户注册 [POST]
+
++ Request (application/json)
+
+        {
+          "username": "jinwyp",
+          "password": "111111",
+          "email   ": "jinwyp@163.com",
+          "mobilePhone": "13564568303"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "success": true,
+          "error": null,
+          "meta": null,
+          "data": {
+            "_id": "5902e17215f3977c5a084b0f",
+            "createdAt": "2017-04-28T06:30:10.907Z",
+            "username": "jinwyp3",
+            "mobilePhone": "13564568303"
+          }
+        }
+        
+        
+## 用户微信联合注册登陆 [/user/signup/wechat]
+
+### 微信小程序新用户注册 [POST]
+
++ Request (application/json)
+
+        { 
+          "code": "051L1ZVs063zcb1MNJTs0XLKVs0L1ZV6",
+          "avatarUrl": "http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epemhhMHVDahoKunWpAicYNibAz2joznAUeeMYER10ux3z1ibOWEXvuIuVfV062tYc7CZbsItZmCV49g/0",
+          "country": "CN",
+          "province": "Shanghai",
+          "city": "",
+          "gender": 1,
+          "language": "zh_CN",
+          "nickName": "王宇鹏",
+          "rawData": "{"nickName":"王宇鹏","gender":1,"language":"zh_CN","city":"","province":"Shanghai","country":"CN","avatarUrl":"http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epemhhMHVDahoKunWpAicYNibAz2joznAUeeMYER10ux3z1ibOWEXvuIuVfV062tYc7CZbsItZmCV49g/0"}",
+          "signature": "3538e47a5e4d090067ead2bbab002b1e16b1f3f9",
+          "encryptedData": "pow28nI9bIa8YRAsAK1xbQR552abZtZ+z9RUXsFh2+1z1oDNdZCJHuFNNFg2HtwXDS0toNobmLoxkOAr/ODOi62dIve3pIPmE0wn7XG8CyTEoVjylJ9u7ZJmFg3c/tiuvEhZxnbE2VISVUC9uY1YOUA7aD2jsZ4GeYnSzrGT3hT1S27iRZ8PlRvhCc8N1oniPFRBih2fBbKaXVtZ9q5CeNWRcX6GdyAzNthJ1sCqkwtUuUV6KGp2yCE7gfotpti1hNMHsv4uGy6lGX205y/WnrmkMkeHy39fIG3jFehT2J6a8wla8IqwfDNI6iXlo9iHuI1TEitIpFC5E1VyalFpBBnzmZ+TaNtKdR3W3qCktX1V/Qz1pBfXlEIkmhGe1Azyymr4Nr5Ps1JUkpBE/CTy3wTc6SZAB4m8nh6ovQVBlnElsXNH+0z78b5wtKmWyj0eNR19N/F5iWrYTAPNFD8Ylg==",
+          "iv": "+I6g69Vpypw7KM1PA5V5Bg==" 
+        }
+
++ Response 200 (application/json)
+
+        {
+          "success": true,
+          "error": null,
+          "meta": null,
+          "data": {
+            "_id": "5902e17215f3977c5a084b0f",
+            "createdAt": "2017-04-28T06:30:10.907Z",
+            "username": "jinwyp3",
+            "mobilePhone": "13564568303"
+          }
+        }
+        
+        

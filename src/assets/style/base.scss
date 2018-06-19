@@ -1,0 +1,86 @@
+// 系统滚动条样式
+::-webkit-scrollbar-thumb{
+  background-color: rgba(160, 162, 161, 0.9);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(162, 160, 158, 0.79);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(84, 86, 87, 0.76);
+  border-radius: 10px;
+}
+::-webkit-scrollbar{
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #e4e8ea;
+  //border-radius: 10px;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+ul,li{
+   list-style: none; 
+}
+body {
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.f-red{
+  color: #F56C6C;
+}
+.f-666{
+    color: #666;
+}
+.font-14{
+    font-size: 14px;
+}
+.mar-t-10{
+  margin-top: 10px;
+}
+.mar-t-20{
+    margin-top: 20px;
+}
+.pad-t-10{
+  padding-top: 10px;
+}
+.pad-b-20{
+    padding-bottom: 20px;
+}
+.underline{
+    text-decoration: underline;
+}
+.text-center{
+    text-align: center;
+}
+
+//input长度
+.inputDefault{
+  width: 200px;
+}
+.inputMin{
+  width: 120px;
+}
+
+/*公共提示*/  
+.tip{
+  color:#F56C6C;
+  margin-top: 10px;
+  overflow: hidden;
+}
+/*公共tabel列表样式*/
+table.distributionTable,table.distributionTable td,table.distributionTable th{
+  border:1px solid #ddd;
+  border-collapse: collapse;
+}
+table.distributionTable th{
+  background-color: #efefef;
+}
+table.distributionTable td{
+  padding: 0 10px;
+}
